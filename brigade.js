@@ -6,7 +6,7 @@ events.on("push", () => {
   job.tasks = [
       "cd /src",
       "ls -l",
-      "docker --help",
+      "docker info",
       "dockerd &",
       "sleep 20",
       "docker ps"
