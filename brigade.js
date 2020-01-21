@@ -1,6 +1,6 @@
 const { events, Job } = require("brigadier");
 events.on("push", () => {
-  var job = new Job("buildfinal", "docker:dind");
+  var job = new Job("buildfinal", "docker:stable-dind-rootless");
   job.privileged = true;
    
   job.tasks = [
