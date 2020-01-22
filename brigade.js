@@ -10,6 +10,7 @@ events.on("push", () => {
       "docker info",
       "docker ps"
   ];
+  
 
   job.run();
 });
