@@ -6,7 +6,6 @@ events.on("push", () => {
       "dockerd &",
       "cd /src",
       "ls -l",
-      "docker info",
       "sleep 10",
       "docker ps"
   ];
