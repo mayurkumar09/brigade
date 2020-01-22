@@ -11,7 +11,6 @@ job.tasks = [
 "sleep 30",
 "cd /src",
 "ls -l",
-"docker info",
 "docker ps"
 ];
 job.run();
