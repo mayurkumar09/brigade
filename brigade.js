@@ -2,7 +2,7 @@ const { events, Job } = require("brigadier");
 events.on("push", () => {
 var job = new Job("buildfinal", "docker:dind");
 job.privileged = true;
-dockerBuild.env = {
+job.env = {
 "DOCKER_DRIVER": "overlay"
 }
 job.tasks = [
