@@ -13,3 +13,5 @@ job.tasks = [
 "sleep 10",
 "docker ps"
 ];
+job.run();
+});
