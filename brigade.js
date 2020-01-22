@@ -6,7 +6,8 @@ job.env = {
 "DOCKER_DRIVER": "overlay"
 }
 job.tasks = [
-"dockerd &",
+// "dockerd &",
+"dockerd-entrypoint.sh &",
 "cd /src",
 "ls -l",
 "docker info",
