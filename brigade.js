@@ -10,8 +10,9 @@ job.tasks = [
 "dockerd-entrypoint.sh &",
 "cd /src",
 "ls -l",
-"docker ps",
-"sleep 10"
+
+"sleep 10",
+"docker ps"
 
 ];
 job.run();
