@@ -4,11 +4,11 @@ events.on("push", () => {
   job.privileged = true;
 
   job.tasks = [
+      "dockerd &",
       "cd /src",
       "ls -l",
       "docker info",
-      "dockerd &",
-      "sleep 20",
+      "sleep 120",
       "docker ps"
   ];
 
