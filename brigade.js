@@ -8,7 +8,7 @@ job.env = {
 job.tasks = [
 // "dockerd &",
 "dockerd-entrypoint.sh &",
-"sleep 30",
+"sleep 10",
 "cd /src",
 "ls -l",
 "docker ps"
